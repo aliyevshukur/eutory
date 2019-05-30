@@ -7,18 +7,20 @@
 
 <body>
 
+  <div class="nav">
+        <ul>
+        <li><a href="<?php base_url('adminpanel/adminpanel') ?>"><img src="<?php echo base_url(); ?>assets/images/demo/admin_icon.png"></a></li>
+        <li> <a href="#"><h3>Welcome to Admin Panel</h3></a> </li>
+        </ul>
+      </div>
 
-
-<ul id="header" id="nav">
-  <li><a href="<?php base_url('adminpanel/adminpanel') ?>"><img src="<?php echo base_url(); ?>assets/images/demo/admin_icon.png"></a></li>
-  <li><h3>Welcome to Admin Panel</h3></li>
-</ul>
 
 <div id="sidemenu">
  <ul>
     <li><a href="<?php echo base_url('adminpanel/Add') ?>" > Add Post </a></li>
 	<li><a href="<?php echo base_url('adminpanel/Delete') ?>" > Delete Post </a></li>
 	<li><a href="<?php echo base_url('adminpanel/Update') ?>"> Update Post </a></li>
+  <li> <a href="<?php echo base_url();?>/adminpanel/adminpanel/logout">Log out</a> </li>
  </ul>
 </div>
 

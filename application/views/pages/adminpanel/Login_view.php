@@ -95,70 +95,53 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="cotainer">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header">Register</div>
-                        <div class="card-body">
-                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
-                                <!-- <div class="form-group row" style="margin:50px;">
-                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="full_name" class="form-control" name="full-name">
-                                    </div>
+              <div class="card">
+                <div class="card-header">Register</div>
+                  <div class="card-body">
+
+                      <div class="login col-md-4 mx-auto text-center">
+		                    <h1>Admin Login</h1>
+		                      <form method="post" action="<?php echo base_url('adminpanel/login/verify')?>">
+			                         <div class="form-group">
+				                             <input type="text" name="username" placeholder="Username" class="form-control">
+			                          </div>
+			                           <div class="form-group">
+				                             <input type="password" name="password" placeholder="Password" class="form-control">
+			                          </div>
+			                          <div class="form-group">
+				                             <input type="submit" name="submit" value="Login" class="btn btn-primary">
+			                          </div>
+
+		                         </form>
+                           </div>
+
+                    <!-- <form action="" method="post">
+                          <div class="form-group row"style="margin:50px;">
+                            <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                              <div class="col-md-6">
+                                    <input type="text" id="username" class="form-control" name="username">
                                 </div>
+                          </div>
 
-                                <div class="form-group row" style="margin:50px;">
-                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="email_address" class="form-control" name="email-address">
-                                    </div>
-                                </div> -->
+                          <div class="form-group row"style="margin:50px;">
+                            <label for="phone_number" class="col-md-4 col-form-label text-md-right">Password</label>
+                              <div class="col-md-6">
+                                  <input type="password" id="password" class="form-control">
+                              </div>
+                          </div>
 
-                                <div class="form-group row"style="margin:50px;">
-                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="user_name" class="form-control" name="username">
-                                    </div>
-                                </div>
+                          <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                Login
+                            </button>
+                                <a href="#" style="margin-left:15px;">Register</a>
+                            </div>
+                        </form> -->
 
-                                <div class="form-group row"style="margin:50px;">
-                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Password</label>
-                                    <div class="col-md-6">
-                                        <input type="password" id="phone_number" class="form-control">
-                                    </div>
-                                </div>
 
-                                <!-- <div class="form-group row">
-                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Present Address</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="present_address" class="form-control">
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="form-group row">
-                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Permanent Address</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="permanent_address" class="form-control" name="permanent-address">
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="form-group row">
-                                    <label for="nid_number" class="col-md-4 col-form-label text-md-right"><abbr
-                                                title="National Id Card">NID</abbr> Number</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="nid_number" class="form-control" name="nid-number">
-                                    </div>
-                                </div> -->
-
-                                    <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
-                                        Login
-                                        </button>
-                                        <a href="#" style="margin-left:15px;">Register</a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                      </div>
+                   </div>
+                </div>
             </div>
         </div>
     </div>
