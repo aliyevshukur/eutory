@@ -25,16 +25,22 @@
 <div id="data">
 <br><br>
 <center><h1>Data available</h1></center>
-
+Table:
 <form method="post" action="<?php echo(base_url('/adminpanel/update/show')); ?>">
   <select name="section">
     <option value="recent">Recent articles</option>
     <option value="top">Top articles</option>
     <option value="choosed">Choosed by admin</option>
   </select>
+  <br><br>
+  Id:
+  <br>
   <input type="number" name="id" value="ID"><br><br>
-   <input type="submit" name="show" value="Show"><br><br>
+  <input type="submit" name="show" value="Show"><br><br>
 </form>
+
+
+<form  action="<?php echo(base_url('/adminpanel/update/update')); ?>" method="post">
 <?php
 
 if (isset($_POST['show'])) {
@@ -67,9 +73,9 @@ if (isset($_POST['show'])) {
     <?php } ?>
 
   </table>
-  <form  action="<?php echo(base_url('/adminpanel/update/update')); ?>" method="post">
     <input type="submit" name="update" value="Update">
   </form>
+
   <?php } ?>
   <br><br>
 </div>

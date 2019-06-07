@@ -26,19 +26,19 @@ class Update extends CI_Controller
      $data['table'] = $this->Update_model->get_table($tableNa,$tableId);
      $this->load->view('pages/adminpanel/Update_view',$data);
 
-   }else {
-     $this->load->view('pages/adminpanel/Update_view');
    }
   }
 
   function update()
   {
-    if ($this->input->post('update') ==  true) {
+    // if ($this->input->post('update') ==  true) {
 
       $title = $this->input->post('title');
       $preview = $this->input->post('preview');
       $article = $this->input->post('article');
+
       $tableNa = $this->input->post('section');
+      $id = $this->input->post('id');
 
       $data = array(
               'title' => $title,
@@ -46,9 +46,9 @@ class Update extends CI_Controller
               'article' => $article
       );
 
-      $this->Update_model->update($data,$tableNa);
-       redirect('adminpanel/update');
-    }
+      $this->Update_model->update($data,$tableNa,$id);
+      redirect('adminpanel/update');
+    // }
   }
 }
 

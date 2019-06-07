@@ -19,6 +19,7 @@
    <li><a href="<?php echo base_url('adminpanel/Add') ?>" > Add Post </a></li>
  <li><a href="<?php echo base_url('adminpanel/Delete') ?>" > Delete Post </a></li>
  <li><a href="<?php echo base_url('adminpanel/Update') ?>"> Update Post </a></li>
+ <li><a href="<?php echo base_url('adminpanel/Register') ?>"> Register new admin </a></li>
  </ul>
 </div>
 

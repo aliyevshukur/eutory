@@ -9,7 +9,7 @@ class Login extends CI_Controller
 	}
 	function index()
 	{
-		$this->load->view('pages/adminpanel/login_view');
+		$this->load->view('pages/adminpanel/Login_view');
 	}
 	function verify()
 	{
